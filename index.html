@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGE Cal</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="main-div">
+        <div class="small-box">
+            <div id="outer-s-box" class="outer-s-box">
+                <div id="inner-s-box" class="inner-s-box"></div>
+            </div>
+        </div>
+        <!-- actual cal -->
+        <div class="main-cal-div">
+            <p class="title">AGE Calculator</p>
+            <div class="com-div">
+                <div class="maincomdiv">
+                    <div class="comdiv fcom-div">   
+                        <label>Date</label>
+                        <input id="date" class="datainp date" type="number">
+                    </div>
+                    <div class="comdiv scom-div">
+                        <label>Month</label>
+                        <input id="month" class="datainp month" type="number">
+                    </div>
+                    <div class="comdiv tcom-div">
+                        <label>Year</label>
+                        <input id="year" class="datainp year" type="number">
+                    </div>
+                </div>
+                <button onclick="checkAGE()" class="but">Check</button>
+            </div>
+            <p class="agerevailer">AGE:<span class="agerev" id="agerev"></span></p>
+            <p class="agerevailer">DAYS:<span class="agerev" id="agerev-date"></span></p>
+            <p class="agerevailer">MONTH:<span class="agerev" id="agerev-month"></span></p>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
